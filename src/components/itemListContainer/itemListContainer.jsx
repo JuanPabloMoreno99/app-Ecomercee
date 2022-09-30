@@ -1,12 +1,13 @@
 import React from "react";
 import Card from "../Card/card";
-import FlexWrapper from "../FlexWrapper/flexWrapper";
-import "./itemlistcontainer.css";
+import FlexWrapper from "../FlexWrapper/FlexWrapper";
+import "./ItemListContainer.css";
+
 
 function ItemListContainer(props) {
   return (
     <div className="container">
-      <h1>Titulo</h1>
+      <h1>{props.greeting}</h1>
       <FlexWrapper>
         <Card
           img="https://www.seoptimer.com/es/blog/wp-content/uploads/2020/06/uiux.png"
